@@ -9,9 +9,8 @@ public class BaseClass {
 	public void launchWebsite() {
 		String projectpath = System.getProperty("user.dir");
 		System.setProperty("webdriver.chrome.driver", projectpath+"\\drivers\\chromedriver.exe");
-
 		driver = new ChromeDriver();
-		
+				
 		driver.get("https://demo.guru99.com/V1/index.php");
 	
 	}
