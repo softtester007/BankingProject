@@ -12,8 +12,7 @@ public class LoginPageTest extends BaseClass {
 	public void setUp() {
 		launchWebsite();
 	}
-	
-	
+
 	@AfterClass
 	public void tearDown() {
 		driver.quit();
