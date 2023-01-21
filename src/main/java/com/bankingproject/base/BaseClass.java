@@ -4,14 +4,15 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class BaseClass {
-	public static void main(String[] args) {
-		System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\chromedriver.exe");
+	public static WebDriver driver;
+	
+	public void launchWebsite() {
+		String projectpath = System.getProperty("user.dir");
+		System.setProperty("webdriver.chrome.driver", projectpath+"\\drivers\\chromedriver.exe");
 
-		WebDriver driver = new ChromeDriver();
+		driver = new ChromeDriver();
 		
 		driver.get("https://demo.guru99.com/V1/index.php");
-		
-		
-		
+	
 	}
 }
